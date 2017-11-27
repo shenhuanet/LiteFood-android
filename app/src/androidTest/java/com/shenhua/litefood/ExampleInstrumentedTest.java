@@ -1,4 +1,4 @@
-package com.shenhua.lightfood;
+package com.shenhua.litefood;
 
 import android.content.Context;
 import android.support.test.InstrumentationRegistry;

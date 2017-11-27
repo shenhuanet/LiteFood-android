@@ -1,4 +1,4 @@
-package com.shenhua.lightfood;
+package com.shenhua.litefood;
 
 import org.junit.Test;
 

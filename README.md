@@ -5,7 +5,7 @@
 “轻食”不是一种特定的食物，而是任意食物的一种形态，轻的不只是餐品，更是食用者的无负担，无压力，更营养，更享受，更美味，他一定是美食，一定很健康，也一定是一种积极阳光的⽣生活态度。
 
 ## OverView
-![overview](https://github.com/shenhuanet/LightFood-android/blob/master/overview.png)
+![overview](https://github.com/shenhuanet/LiteFood-android/blob/master/overview.png)
 
 ## About Me
 CSDN：http://blog.csdn.net/klxh2009<br>
