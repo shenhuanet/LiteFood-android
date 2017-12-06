@@ -1,5 +1,5 @@
 # LiteFood
-![Build](https://img.shields.io/vso/build/larsbrinkhoff/953a34b9-5966-4923-a48a-c41874cfb5f5/1.svg)
+[![developing](https://img.shields.io/badge/build-developing-yellowgreen.svg)](#)
 ![License](https://img.shields.io/packagist/l/doctrine/orm.svg)
 
 “轻食”不是一种特定的食物，而是任意食物的一种形态，轻的不只是餐品，更是食用者的无负担，无压力，更营养，更享受，更美味，他一定是美食，一定很健康，也一定是一种积极阳光的⽣生活态度。
