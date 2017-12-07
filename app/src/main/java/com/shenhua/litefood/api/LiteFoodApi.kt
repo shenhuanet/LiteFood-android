@@ -14,4 +14,5 @@ interface LiteFoodApi {
 
     @GET("api/login")
     fun login(@Query("username") username: String, @Query("password") password: String): Observable<User>
+
 }
