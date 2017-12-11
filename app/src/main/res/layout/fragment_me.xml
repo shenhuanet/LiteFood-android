@@ -1,0 +1,233 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v4.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <android.support.constraint.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <FrameLayout
+            android:id="@+id/topBanner"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <ImageView
+                android:id="@+id/imgMeBanner"
+                android:layout_width="match_parent"
+                android:layout_height="100dp"
+                android:scaleType="centerCrop" />
+
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="100dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="bottom"
+                    android:layout_margin="10dp"
+                    android:gravity="center"
+                    android:text="9天\n连续签到" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="bottom|end"
+                    android:layout_margin="10dp"
+                    android:gravity="center"
+                    android:text="100\n经验值" />
+
+            </FrameLayout>
+
+            <ImageView
+                android:id="@+id/imgMeAvatar"
+                android:layout_width="80dp"
+                android:layout_height="80dp"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="60dp"
+                android:scaleType="centerCrop" />
+
+        </FrameLayout>
+
+        <View
+            android:id="@+id/view1"
+            android:layout_width="match_parent"
+            android:layout_height="10dp"
+            android:background="#F2F2F2"
+            app:layout_constraintTop_toBottomOf="@+id/topBanner" />
+
+        <android.support.v7.widget.LinearLayoutCompat
+            android:id="@+id/linear1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            app:divider="@drawable/bg_divider_gray"
+            app:layout_constraintTop_toBottomOf="@+id/view1"
+            app:showDividers="middle">
+
+            <RelativeLayout
+                style="@style/ItemLayout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:drawableLeft="@drawable/ic_featured_pressed"
+                    android:drawableStart="@drawable/ic_featured_pressed"
+                    android:gravity="center"
+                    android:text="我的关注" />
+
+                <include layout="@layout/include_right_arrow" />
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                style="@style/ItemLayout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:drawableLeft="@drawable/ic_featured_pressed"
+                    android:drawableStart="@drawable/ic_featured_pressed"
+                    android:gravity="center"
+                    android:text="我的轻食方式" />
+
+                <include layout="@layout/include_right_arrow" />
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                style="@style/ItemLayout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:drawableLeft="@drawable/ic_featured_pressed"
+                    android:drawableStart="@drawable/ic_featured_pressed"
+                    android:gravity="center"
+                    android:text="分享与收藏" />
+
+                <include layout="@layout/include_right_arrow" />
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                style="@style/ItemLayout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:drawableLeft="@drawable/ic_featured_pressed"
+                    android:drawableStart="@drawable/ic_featured_pressed"
+                    android:gravity="center"
+                    android:text="账户设置" />
+
+                <include layout="@layout/include_right_arrow" />
+
+            </RelativeLayout>
+
+        </android.support.v7.widget.LinearLayoutCompat>
+
+        <View
+            android:id="@+id/view2"
+            android:layout_width="match_parent"
+            android:layout_height="10dp"
+            android:background="#F2F2F2"
+            app:layout_constraintTop_toBottomOf="@+id/linear1" />
+
+        <android.support.v7.widget.LinearLayoutCompat
+            android:id="@+id/linear2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            app:divider="@drawable/bg_divider_gray"
+            app:layout_constraintTop_toBottomOf="@+id/view2"
+            app:showDividers="middle">
+
+            <RelativeLayout
+                style="@style/ItemLayout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:drawableLeft="@drawable/ic_featured_pressed"
+                    android:drawableStart="@drawable/ic_featured_pressed"
+                    android:gravity="center"
+                    android:text="视频自动播放" />
+
+                <Switch
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentEnd="true"
+                    android:layout_alignParentRight="true" />
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                style="@style/ItemLayout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:drawableLeft="@drawable/ic_featured_pressed"
+                    android:drawableStart="@drawable/ic_featured_pressed"
+                    android:gravity="center"
+                    android:text="图片浏览模式" />
+
+                <include layout="@layout/include_right_arrow" />
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                style="@style/ItemLayout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:drawableLeft="@drawable/ic_featured_pressed"
+                    android:drawableStart="@drawable/ic_featured_pressed"
+                    android:gravity="center"
+                    android:text="清除缓存" />
+
+                <include layout="@layout/include_right_arrow" />
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                style="@style/ItemLayout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:drawableLeft="@drawable/ic_featured_pressed"
+                    android:drawableStart="@drawable/ic_featured_pressed"
+                    android:gravity="center"
+                    android:text="关于" />
+
+                <include layout="@layout/include_right_arrow" />
+
+            </RelativeLayout>
+
+        </android.support.v7.widget.LinearLayoutCompat>
+
+    </android.support.constraint.ConstraintLayout>
+
+</android.support.v4.widget.NestedScrollView>

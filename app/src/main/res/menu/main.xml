@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/menu_featured"
+        android:checked="true"
+        android:icon="@drawable/ic_featured_normal"
+        android:title="精选" />
+    <item
+        android:id="@+id/menu_talent"
+        android:icon="@drawable/ic_featured_normal"
+        android:title="达人" />
+    <item
+        android:id="@+id/menu_category"
+        android:icon="@drawable/ic_featured_normal"
+        android:title="分类" />
+    <item
+        android:id="@+id/menu_me"
+        android:icon="@drawable/ic_featured_normal"
+        android:title="我的" />
+</menu>
