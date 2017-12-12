@@ -29,6 +29,9 @@ class MainActivity : AppCompatActivity() {
             nav(item.itemId)
             true
         }
+        bottomMenu.setOnNavigationItemReselectedListener { item ->
+            print("Reselected....")
+        }
     }
 
     private fun nav(itemId: Int) {
@@ -53,7 +56,7 @@ class MainActivity : AppCompatActivity() {
 
     fun changeTitle(title: String) {
         toolbarTitle.text = title
-        if (title == "我的") {
+        if (title == getString(R.string.string_my)) {
             toolbarAdd.visibility = View.GONE
         } else {
             toolbarAdd.visibility = View.VISIBLE

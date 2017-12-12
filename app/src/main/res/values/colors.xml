@@ -3,4 +3,6 @@
     <color name="colorPrimary">#bfbfbf</color>
     <color name="colorPrimaryDark">#ffffff</color>
     <color name="colorAccent">#515151</color>
+
+    <color name="colorRecyclerItemMask">#f0f0f0</color>
 </resources>
