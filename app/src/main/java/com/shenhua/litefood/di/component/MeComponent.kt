@@ -10,7 +10,7 @@ import dagger.Subcomponent
  * @author shenhua
  *         Email shenhuanet@126.com
  */
-@Subcomponent(modules = [MeModule::class])
+@Subcomponent(modules = arrayOf(MeModule::class))
 interface MeComponent {
 
 }

@@ -29,9 +29,9 @@ class MeFragment : Fragment() {
     private var rootView: View? = null
     private var isInit: Boolean = false
 
-    override fun onCreateView(inflater: LayoutInflater?, container: ViewGroup?, savedInstanceState: Bundle?): View? {
+    override fun onCreateView(inflater: LayoutInflater, container: ViewGroup?, savedInstanceState: Bundle?): View? {
         if (rootView == null) {
-            rootView = inflater!!.inflate(R.layout.fragment_me, container, false)
+            rootView = inflater.inflate(R.layout.fragment_me, container, false)
         }
         return rootView
     }
@@ -45,7 +45,7 @@ class MeFragment : Fragment() {
         bitmap.recycle()
     }
 
-    override fun onViewCreated(view: View?, savedInstanceState: Bundle?) {
+    override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
         if (!isInit) {
             setupViews()

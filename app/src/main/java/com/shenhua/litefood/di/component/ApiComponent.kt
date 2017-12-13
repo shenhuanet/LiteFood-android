@@ -11,7 +11,7 @@ import javax.inject.Singleton
  *         Email shenhuanet@126.com
  */
 @Singleton
-@Component(modules = [(ApiModule::class)])
+@Component(modules = arrayOf(ApiModule::class))
 interface ApiComponent {
 
     fun inject(app: App)

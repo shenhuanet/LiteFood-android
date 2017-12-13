@@ -32,22 +32,22 @@ class TalentFragment : Fragment() {
 
     private var rootView: View? = null
 
-    override fun onCreateView(inflater: LayoutInflater?, container: ViewGroup?, savedInstanceState: Bundle?): View? {
+    override fun onCreateView(inflater: LayoutInflater, container: ViewGroup?, savedInstanceState: Bundle?): View? {
         if (rootView == null) {
-            rootView = inflater!!.inflate(R.layout.fragment_talent, container, false)
+            rootView = inflater.inflate(R.layout.fragment_talent, container, false)
         }
         return rootView
     }
 
-    override fun onViewCreated(view: View?, savedInstanceState: Bundle?) {
+    override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
         setupViews()
     }
 
     private fun setupViews() {
         refreshLayout.autoRefresh()
-        footView.setAnimatingColor(ContextCompat.getColor(context, R.color.colorAccent))
-        refreshLayout.refreshFooter = BallPulseFooter(context).setSpinnerStyle(SpinnerStyle.Scale)
+        footView.setAnimatingColor(ContextCompat.getColor(context!!, R.color.colorAccent))
+        refreshLayout.refreshFooter = BallPulseFooter(context!!).setSpinnerStyle(SpinnerStyle.Scale)
         refreshLayout.setOnRefreshListener { layout ->
             layout.finishRefresh(2000)
         }

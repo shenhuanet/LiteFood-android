@@ -18,7 +18,7 @@ import javax.inject.Singleton
  * @author shenhua
  *         Email shenhuanet@126.com
  */
-@Module(includes = [(AppModule::class)])
+@Module(includes = arrayOf(AppModule::class))
 class ApiModule {
 
     @Provides
